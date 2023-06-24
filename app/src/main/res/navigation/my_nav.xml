@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/allProductsFragment">
+
+    <fragment
+        android:id="@+id/allProductsFragment"
+        android:name="com.example.e_store.ui.all_products.AllProductsFragment"
+        android:label="products_fragment"
+        tools:layout="@layout/products_fragment" >
+        <action
+            android:id="@+id/action_allProductsFragment_to_singleProductFragment"
+            app:destination="@id/singleProductFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allProductsFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_allProductsFragment_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_allProductsFragment_to_shoppingCartFragment2"
+            app:destination="@id/shoppingCartFragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleProductFragment"
+        android:name="com.example.e_store.ui.single_product.SingleProductFragment"
+        android:label="products_detail_fragment"
+        tools:layout="@layout/products_detail_fragment" >
+        <action
+            android:id="@+id/action_singleProductFragment_to_shoppingCartFragment2"
+            app:destination="@id/shoppingCartFragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allProductsFragment" />
+        <action
+            android:id="@+id/action_singleProductFragment_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingCartFragment2"
+        android:name="com.example.e_store.ui.shopping_cart.ShoppingCartFragment"
+        android:label="shopping_cart_fragment"
+        tools:layout="@layout/shopping_cart_fragment" >
+        <action
+            android:id="@+id/action_shoppingCartFragment2_to_singleProductFragment"
+            app:destination="@id/singleProductFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/shoppingCartFragment2" />
+        <action
+            android:id="@+id/action_shoppingCartFragment2_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/shoppingCartFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thankYouFragment"
+        android:name="com.example.e_store.ui.thank_you_page.ThankYouFragment"
+        android:label="fragment_thank_you"
+        tools:layout="@layout/fragment_thank_you" >
+        <action
+            android:id="@+id/action_thankYouFragment_to_allProductsFragment"
+            app:destination="@id/allProductsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.e_store.ui.Login.LoginScreen"
+        android:label="login_screen_layout"
+        tools:layout="@layout/login_screen_layout" >
+        <action
+            android:id="@+id/action_loginScreen_to_allProductsFragment"
+            app:destination="@id/allProductsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/loginScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_register2"
+            app:destination="@id/register2"
+            app:popUpTo="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/register2"
+        android:name="com.example.e_store.ui.Register.Register"
+        android:label="register"
+        tools:layout="@layout/register" >
+        <action
+            android:id="@+id/action_register2_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/allProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.e_store.ui.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_thankYouFragment"
+            app:destination="@id/thankYouFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/allProductsFragment" />
+    </fragment>
+</navigation>

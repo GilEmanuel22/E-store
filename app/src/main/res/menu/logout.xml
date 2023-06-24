@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/logout_action"
+    android:title="@string/logout"
+
+    app:showAsAction="never"
+    >
+</item>
+<item
+    android:id="@+id/login_action"
+    android:title="@string/login"
+
+    app:showAsAction="never"
+    >
+</item>
+<item
+    android:id="@+id/shopping_cart_item"
+    android:title="@string/shopping_cart"
+    app:showAsAction="never"
+    >
+</item>
+<item
+    android:id="@+id/account_details"
+    android:title="@string/account_details"
+    app:showAsAction="never"
+    >
+</item>
+
+
+
+</menu>

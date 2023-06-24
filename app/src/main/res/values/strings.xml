@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">E-Store</string>
+    <string name="thanks_for_your_order">Thanks for your order.</string>
+    <string name="your_grand_total_in_usd_was">Your Grand Total (In USD) was:</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="amount">Amount:</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="description">Description:</string>
+    <string name="price">Price:</string>
+    <string name="the_total_in_usd_is">The total in USD is:</string>
+    <string name="check_out">Check Out</string>
+    <string name="quantity">Quantity:</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone_no">Phone No</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="login_successful">Login successful</string>
+    <string name="username">userName</string>
+    <string name="account_details">Account details</string>
+    <string name="no_one_is_connect">no one is connect</string>
+    <string name="you_logged_in_already">You logged in already</string>
+    <string name="no_data">no data</string>
+    <string name="there_is_no_account">There is no account</string>
+    <string name="confirm_delete">Confirm delete</string>
+    <string name="are_you_sure_you_want_to_delete_this_item">Are you sure you want to delete this item?</string>
+    <string name="item_deleted">Item Deleted</string>
+    <string name="no">No</string>
+    <string name="no_item_in_cart">No items in your cart!</string>
+    <string name="yes">Yes</string>
+    <string name="logout">Logout</string>
+    <string name="shopping_cart">Shopping cart</string>
+    <string name="sign_in">Sign In</string>
+    <string name="are_you_sure_you_want_to_sign_out">Are you sure you want to sign out?</string>
+    <string name="sign_out_successful">sign out successful</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="please_enter_your_credit_card_information">Please Enter Your Credit Card Information</string>
+    <string name="cvv">CVV</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="required">Requierd</string>
+    <string name="error">Error</string>
+    <string name="not_all_the_req">Not all the required fields have fulfilled!</string>
+    <string name="okey">Okey</string>
+    <string name="please_log_in_for_adding">Please log in for adding a product to a shopping cart</string>
+    <string name="invalid_address">Invalid Address</string>
+    <string name="invalid_year">Invalid Year</string>
+    <string name="invalid_month">Invalid Month</string>
+    <string name="invalid_cvv">Invalid CVV Number</string>
+    <string name="invalid_credit_card">Invalid Credit Card Number</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
